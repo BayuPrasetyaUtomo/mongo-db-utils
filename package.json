@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "deno:purge": "deno run -A --env ./utils/purge-database.ts",
+    "bun:purge": "bun run ./utils/purge-database.ts -B",
+    "pnpm:purge": "pnpm run ./utils/purge-database.ts",
+    "npm:purge": "npm run ./utils/purge-database.ts"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  }
+}
